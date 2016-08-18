@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/decioferreira/kafka.cr">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/doc.js"></script>
+  <title>Kafka::TopicConfiguration - github.com/decioferreira/kafka.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/decioferreira/kafka.cr/Kafka" data-name="kafka">
+      <a href="../Kafka.html">Kafka</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Configuration" data-name="kafka::configuration">
+      <a href="../Kafka/Configuration.html">Configuration</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Consumer" data-name="kafka::consumer">
+      <a href="../Kafka/Consumer.html">Consumer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/GroupInfo" data-name="kafka::groupinfo">
+      <a href="../Kafka/GroupInfo.html">GroupInfo</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/GroupList" data-name="kafka::grouplist">
+      <a href="../Kafka/GroupList.html">GroupList</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Handle" data-name="kafka::handle">
+      <a href="../Kafka/Handle.html">Handle</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Message" data-name="kafka::message">
+      <a href="../Kafka/Message.html">Message</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Metadata" data-name="kafka::metadata">
+      <a href="../Kafka/Metadata.html">Metadata</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Producer" data-name="kafka::producer">
+      <a href="../Kafka/Producer.html">Producer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Queue" data-name="kafka::queue">
+      <a href="../Kafka/Queue.html">Queue</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Topic" data-name="kafka::topic">
+      <a href="../Kafka/Topic.html">Topic</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/decioferreira/kafka.cr/Kafka/TopicConfiguration" data-name="kafka::topicconfiguration">
+      <a href="../Kafka/TopicConfiguration.html">TopicConfiguration</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicPartition" data-name="kafka::topicpartition">
+      <a href="../Kafka/TopicPartition.html">TopicPartition</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicPartitionList" data-name="kafka::topicpartitionlist">
+      <a href="../Kafka/TopicPartitionList.html">TopicPartitionList</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Kafka::TopicConfiguration
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Kafka/TopicConfiguration.html">Kafka::TopicConfiguration</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_configuration.cr#L2" target="_blank">kafka/topic_configuration.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Class Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28conf%3D%3Cspanclass%3D%22t%22%3ELibKafka%3C%2Fspan%3E.topic_conf_new%29-class-method" class="signature"><strong>.new</strong>(conf = <span class="t">LibKafka</span>.topic_conf_new)</a>
+        
+          <div class="summary"><p>Create topic configuration object.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#destroy-instance-method" class="signature"><strong>#destroy</strong></a>
+        
+          <div class="summary"><p>Destroys the topic configuration object.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dup-instance-method" class="signature"><strong>#dup</strong></a>
+        
+          <div class="summary"><p>Creates a copy/duplicate of topic configuration object configuration.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#set%28name%3AString%2Cvalue%3AString%29-instance-method" class="signature"><strong>#set</strong>(name : String, value : String)</a>
+        
+          <div class="summary"><p>Sets a single topic configuration value by property name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_unsafe%3ALibKafka%3A%3ARdKafkaTopicConfT-instance-method" class="signature"><strong>#to_unsafe</strong> : LibKafka::RdKafkaTopicConfT</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Class Method Detail</h2>
+  
+    <div class="entry-detail" id="new&#40;conf&#61;&lt;spanclass&#61;&quot;t&quot;&gt;LibKafka&lt;/span&gt;.topic_conf_new&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(conf = <span class="t">LibKafka</span>.topic_conf_new)
+
+        <a class="method-permalink" href="#new%28conf%3D%3Cspanclass%3D%22t%22%3ELibKafka%3C%2Fspan%3E.topic_conf_new%29-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Create topic configuration object.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_configuration.cr#L4" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="destroy-instance-method">
+      <div class="signature">
+        
+        def <strong>destroy</strong>
+
+        <a class="method-permalink" href="#destroy-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Destroys the topic configuration object.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_configuration.cr#L8" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dup-instance-method">
+      <div class="signature">
+        
+        def <strong>dup</strong>
+
+        <a class="method-permalink" href="#dup-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Creates a copy/duplicate of topic configuration object configuration.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_configuration.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="set&#40;name:String,value:String&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>set</strong>(name : String, value : String)
+
+        <a class="method-permalink" href="#set%28name%3AString%2Cvalue%3AString%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Sets a single topic configuration value by property name.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_configuration.cr#L18" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_unsafe:LibKafka::RdKafkaTopicConfT-instance-method">
+      <div class="signature">
+        
+        def <strong>to_unsafe</strong> : LibKafka::RdKafkaTopicConfT
+
+        <a class="method-permalink" href="#to_unsafe%3ALibKafka%3A%3ARdKafkaTopicConfT-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_configuration.cr#L27" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

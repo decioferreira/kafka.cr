@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/decioferreira/kafka.cr">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/doc.js"></script>
+  <title>Kafka::Message - github.com/decioferreira/kafka.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/decioferreira/kafka.cr/Kafka" data-name="kafka">
+      <a href="../Kafka.html">Kafka</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Configuration" data-name="kafka::configuration">
+      <a href="../Kafka/Configuration.html">Configuration</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Consumer" data-name="kafka::consumer">
+      <a href="../Kafka/Consumer.html">Consumer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/GroupInfo" data-name="kafka::groupinfo">
+      <a href="../Kafka/GroupInfo.html">GroupInfo</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/GroupList" data-name="kafka::grouplist">
+      <a href="../Kafka/GroupList.html">GroupList</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Handle" data-name="kafka::handle">
+      <a href="../Kafka/Handle.html">Handle</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/decioferreira/kafka.cr/Kafka/Message" data-name="kafka::message">
+      <a href="../Kafka/Message.html">Message</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Metadata" data-name="kafka::metadata">
+      <a href="../Kafka/Metadata.html">Metadata</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Producer" data-name="kafka::producer">
+      <a href="../Kafka/Producer.html">Producer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Queue" data-name="kafka::queue">
+      <a href="../Kafka/Queue.html">Queue</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Topic" data-name="kafka::topic">
+      <a href="../Kafka/Topic.html">Topic</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicConfiguration" data-name="kafka::topicconfiguration">
+      <a href="../Kafka/TopicConfiguration.html">TopicConfiguration</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicPartition" data-name="kafka::topicpartition">
+      <a href="../Kafka/TopicPartition.html">TopicPartition</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicPartitionList" data-name="kafka::topicpartitionlist">
+      <a href="../Kafka/TopicPartitionList.html">TopicPartitionList</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Kafka::Message
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Kafka/Message.html">Kafka::Message</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/message.cr#L2" target="_blank">kafka/message.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Class Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28rkmessage%3A%3A%3APointer%28LibKafka%3A%3AMessageT%29%29-class-method" class="signature"><strong>.new</strong>(rkmessage : ::Pointer(LibKafka::MessageT))</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#destroy-instance-method" class="signature"><strong>#destroy</strong></a>
+        
+          <div class="summary"><p>Frees resources and hands ownership back to rdkafka.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#errstr%3AString%7CNil-instance-method" class="signature"><strong>#errstr</strong> : String | Nil</a>
+        
+          <div class="summary"><p>Returns the error string for an errored rd_kafka_message_t or NULL if there was no error.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#payload-instance-method" class="signature"><strong>#payload</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#timestamp%3AInt64-instance-method" class="signature"><strong>#timestamp</strong> : Int64</a>
+        
+          <div class="summary"><p>Returns the message timestamp for a consumed message.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_s%28io%29-instance-method" class="signature"><strong>#to_s</strong>(io)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_unsafe%3APointer%28LibKafka%3A%3AMessageT%29-instance-method" class="signature"><strong>#to_unsafe</strong> : Pointer(LibKafka::MessageT)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Class Method Detail</h2>
+  
+    <div class="entry-detail" id="new&#40;rkmessage:::Pointer&#40;LibKafka::MessageT&#41;&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(rkmessage : ::Pointer(LibKafka::MessageT))
+
+        <a class="method-permalink" href="#new%28rkmessage%3A%3A%3APointer%28LibKafka%3A%3AMessageT%29%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/message.cr#L3" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="destroy-instance-method">
+      <div class="signature">
+        
+        def <strong>destroy</strong>
+
+        <a class="method-permalink" href="#destroy-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Frees resources and hands ownership back to rdkafka.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/message.cr#L7" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="errstr:String|Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>errstr</strong> : String | Nil
+
+        <a class="method-permalink" href="#errstr%3AString%7CNil-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns the error string for an errored rd_kafka_message_t or NULL if
+there was no error.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/message.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="payload-instance-method">
+      <div class="signature">
+        
+        def <strong>payload</strong>
+
+        <a class="method-permalink" href="#payload-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/message.cr#L22" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="timestamp:Int64-instance-method">
+      <div class="signature">
+        
+        def <strong>timestamp</strong> : Int64
+
+        <a class="method-permalink" href="#timestamp%3AInt64-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns the message timestamp for a consumed message.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/message.cr#L18" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_s&#40;io&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>to_s</strong>(io)
+
+        <a class="method-permalink" href="#to_s%28io%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/message.cr#L26" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_unsafe:Pointer&#40;LibKafka::MessageT&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>to_unsafe</strong> : Pointer(LibKafka::MessageT)
+
+        <a class="method-permalink" href="#to_unsafe%3APointer%28LibKafka%3A%3AMessageT%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/message.cr#L30" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

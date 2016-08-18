@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/decioferreira/kafka.cr">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/doc.js"></script>
+  <title>Kafka::TopicPartitionList - github.com/decioferreira/kafka.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/decioferreira/kafka.cr/Kafka" data-name="kafka">
+      <a href="../Kafka.html">Kafka</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Configuration" data-name="kafka::configuration">
+      <a href="../Kafka/Configuration.html">Configuration</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Consumer" data-name="kafka::consumer">
+      <a href="../Kafka/Consumer.html">Consumer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/GroupInfo" data-name="kafka::groupinfo">
+      <a href="../Kafka/GroupInfo.html">GroupInfo</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/GroupList" data-name="kafka::grouplist">
+      <a href="../Kafka/GroupList.html">GroupList</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Handle" data-name="kafka::handle">
+      <a href="../Kafka/Handle.html">Handle</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Message" data-name="kafka::message">
+      <a href="../Kafka/Message.html">Message</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Metadata" data-name="kafka::metadata">
+      <a href="../Kafka/Metadata.html">Metadata</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Producer" data-name="kafka::producer">
+      <a href="../Kafka/Producer.html">Producer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Queue" data-name="kafka::queue">
+      <a href="../Kafka/Queue.html">Queue</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Topic" data-name="kafka::topic">
+      <a href="../Kafka/Topic.html">Topic</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicConfiguration" data-name="kafka::topicconfiguration">
+      <a href="../Kafka/TopicConfiguration.html">TopicConfiguration</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicPartition" data-name="kafka::topicpartition">
+      <a href="../Kafka/TopicPartition.html">TopicPartition</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/decioferreira/kafka.cr/Kafka/TopicPartitionList" data-name="kafka::topicpartitionlist">
+      <a href="../Kafka/TopicPartitionList.html">TopicPartitionList</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Kafka::TopicPartitionList
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Kafka/TopicPartitionList.html">Kafka::TopicPartitionList</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>A growable list of Topic+Partitions.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_partition_list.cr#L3" target="_blank">kafka/topic_partition_list.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Class Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28rkparlist%3ALibKafka%3A%3ATopicPartitionListT%29-class-method" class="signature"><strong>.new</strong>(rkparlist : LibKafka::TopicPartitionListT)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#new%28size%29-class-method" class="signature"><strong>.new</strong>(size)</a>
+        
+          <div class="summary"><p>Create a new list/vector Topic+Partition container.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#add%28topic%3AString%2Cpartition%3AInt32%29-instance-method" class="signature"><strong>#add</strong>(topic : String, partition : Int32)</a>
+        
+          <div class="summary"><p>Add topic+partition to list.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#add_range%28topic%3AString%2Cstart%3AInt32%2Cstop%3AInt32%29-instance-method" class="signature"><strong>#add_range</strong>(topic : String, start : Int32, stop : Int32)</a>
+        
+          <div class="summary"><p>Add range of partitions from start to stop inclusive.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#copy%3ATopicPartitionList-instance-method" class="signature"><strong>#copy</strong> : TopicPartitionList</a>
+        
+          <div class="summary"><p>Make a copy of an existing list.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#del%28topic%3AString%2Cpartition%3AInt32%29-instance-method" class="signature"><strong>#del</strong>(topic : String, partition : Int32)</a>
+        
+          <div class="summary"><p>Delete partition from list.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#del_by_idx%28idx%3ALibC%3A%3AInt%29-instance-method" class="signature"><strong>#del_by_idx</strong>(idx : LibC::Int)</a>
+        
+          <div class="summary"><p>Delete partition from list.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#destroy-instance-method" class="signature"><strong>#destroy</strong></a>
+        
+          <div class="summary"><p>Free all resources used by the list and the list itself.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_unsafe%3ALibKafka%3A%3ATopicPartitionListT%7CPointer%28LibKafka%3A%3ATopicPartitionListT%29-instance-method" class="signature"><strong>#to_unsafe</strong> : LibKafka::TopicPartitionListT | Pointer(LibKafka::TopicPartitionListT)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#topic_partition_list_find%28topic%3AString%2Cpartition%3AInt32%29-instance-method" class="signature"><strong>#topic_partition_list_find</strong>(topic : String, partition : Int32)</a>
+        
+          <div class="summary"><p>Find element by topic and partition.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#topic_partition_list_set_offset%28topic%3AString%2Cpartition%3AInt32%2Coffset%3AInt64%29-instance-method" class="signature"><strong>#topic_partition_list_set_offset</strong>(topic : String, partition : Int32, offset : Int64)</a>
+        
+          <div class="summary"><p>Set offset for topic and partition.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Class Method Detail</h2>
+  
+    <div class="entry-detail" id="new&#40;rkparlist:LibKafka::TopicPartitionListT&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(rkparlist : LibKafka::TopicPartitionListT)
+
+        <a class="method-permalink" href="#new%28rkparlist%3ALibKafka%3A%3ATopicPartitionListT%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_partition_list.cr#L4" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="new&#40;size&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(size)
+
+        <a class="method-permalink" href="#new%28size%29-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Create a new list/vector Topic+Partition container.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_partition_list.cr#L8" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="add&#40;topic:String,partition:Int32&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>add</strong>(topic : String, partition : Int32)
+
+        <a class="method-permalink" href="#add%28topic%3AString%2Cpartition%3AInt32%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Add topic+partition to list.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_partition_list.cr#L18" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="add_range&#40;topic:String,start:Int32,stop:Int32&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>add_range</strong>(topic : String, start : Int32, stop : Int32)
+
+        <a class="method-permalink" href="#add_range%28topic%3AString%2Cstart%3AInt32%2Cstop%3AInt32%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Add range of partitions from start to stop inclusive.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_partition_list.cr#L23" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="copy:TopicPartitionList-instance-method">
+      <div class="signature">
+        
+        def <strong>copy</strong> : <a href="../Kafka/TopicPartitionList.html">TopicPartitionList</a>
+
+        <a class="method-permalink" href="#copy%3ATopicPartitionList-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Make a copy of an existing list.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_partition_list.cr#L38" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="del&#40;topic:String,partition:Int32&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>del</strong>(topic : String, partition : Int32)
+
+        <a class="method-permalink" href="#del%28topic%3AString%2Cpartition%3AInt32%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Delete partition from list.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_partition_list.cr#L28" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="del_by_idx&#40;idx:LibC::Int&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>del_by_idx</strong>(idx : LibC::Int)
+
+        <a class="method-permalink" href="#del_by_idx%28idx%3ALibC%3A%3AInt%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Delete partition from list.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_partition_list.cr#L33" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="destroy-instance-method">
+      <div class="signature">
+        
+        def <strong>destroy</strong>
+
+        <a class="method-permalink" href="#destroy-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Free all resources used by the list and the list itself.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_partition_list.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_unsafe:LibKafka::TopicPartitionListT|Pointer&#40;LibKafka::TopicPartitionListT&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>to_unsafe</strong> : LibKafka::TopicPartitionListT | Pointer(LibKafka::TopicPartitionListT)
+
+        <a class="method-permalink" href="#to_unsafe%3ALibKafka%3A%3ATopicPartitionListT%7CPointer%28LibKafka%3A%3ATopicPartitionListT%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_partition_list.cr#L52" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="topic_partition_list_find&#40;topic:String,partition:Int32&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>topic_partition_list_find</strong>(topic : String, partition : Int32)
+
+        <a class="method-permalink" href="#topic_partition_list_find%28topic%3AString%2Cpartition%3AInt32%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Find element by topic and partition.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_partition_list.cr#L48" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="topic_partition_list_set_offset&#40;topic:String,partition:Int32,offset:Int64&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>topic_partition_list_set_offset</strong>(topic : String, partition : Int32, offset : Int64)
+
+        <a class="method-permalink" href="#topic_partition_list_set_offset%28topic%3AString%2Cpartition%3AInt32%2Coffset%3AInt64%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Set offset for topic and partition.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_partition_list.cr#L43" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

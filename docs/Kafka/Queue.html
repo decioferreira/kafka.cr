@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/decioferreira/kafka.cr">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/doc.js"></script>
+  <title>Kafka::Queue - github.com/decioferreira/kafka.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/decioferreira/kafka.cr/Kafka" data-name="kafka">
+      <a href="../Kafka.html">Kafka</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Configuration" data-name="kafka::configuration">
+      <a href="../Kafka/Configuration.html">Configuration</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Consumer" data-name="kafka::consumer">
+      <a href="../Kafka/Consumer.html">Consumer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/GroupInfo" data-name="kafka::groupinfo">
+      <a href="../Kafka/GroupInfo.html">GroupInfo</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/GroupList" data-name="kafka::grouplist">
+      <a href="../Kafka/GroupList.html">GroupList</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Handle" data-name="kafka::handle">
+      <a href="../Kafka/Handle.html">Handle</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Message" data-name="kafka::message">
+      <a href="../Kafka/Message.html">Message</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Metadata" data-name="kafka::metadata">
+      <a href="../Kafka/Metadata.html">Metadata</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Producer" data-name="kafka::producer">
+      <a href="../Kafka/Producer.html">Producer</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/decioferreira/kafka.cr/Kafka/Queue" data-name="kafka::queue">
+      <a href="../Kafka/Queue.html">Queue</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Topic" data-name="kafka::topic">
+      <a href="../Kafka/Topic.html">Topic</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicConfiguration" data-name="kafka::topicconfiguration">
+      <a href="../Kafka/TopicConfiguration.html">TopicConfiguration</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicPartition" data-name="kafka::topicpartition">
+      <a href="../Kafka/TopicPartition.html">TopicPartition</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicPartitionList" data-name="kafka::topicpartitionlist">
+      <a href="../Kafka/TopicPartitionList.html">TopicPartitionList</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Kafka::Queue
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Kafka/Queue.html">Kafka::Queue</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/queue.cr#L2" target="_blank">kafka/queue.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Class Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28rk%3AConsumer%7CProducer%29-class-method" class="signature"><strong>.new</strong>(rk : Consumer | Producer)</a>
+        
+          <div class="summary"><p>Create a new message queue.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#destroy-instance-method" class="signature"><strong>#destroy</strong></a>
+        
+          <div class="summary"><p>Destroys queue, purging all of the enqueued messages.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_unsafe%3ALibKafka%3A%3ARdKafkaQueueT-instance-method" class="signature"><strong>#to_unsafe</strong> : LibKafka::RdKafkaQueueT</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Class Method Detail</h2>
+  
+    <div class="entry-detail" id="new&#40;rk:Consumer|Producer&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(rk : <a href="../Kafka/Consumer.html">Consumer</a> | <a href="../Kafka/Producer.html">Producer</a>)
+
+        <a class="method-permalink" href="#new%28rk%3AConsumer%7CProducer%29-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Create a new message queue.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/queue.cr#L4" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="destroy-instance-method">
+      <div class="signature">
+        
+        def <strong>destroy</strong>
+
+        <a class="method-permalink" href="#destroy-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Destroys queue, purging all of the enqueued messages.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/queue.cr#L9" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_unsafe:LibKafka::RdKafkaQueueT-instance-method">
+      <div class="signature">
+        
+        def <strong>to_unsafe</strong> : LibKafka::RdKafkaQueueT
+
+        <a class="method-permalink" href="#to_unsafe%3ALibKafka%3A%3ARdKafkaQueueT-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/queue.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/decioferreira/kafka.cr">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/doc.js"></script>
+  <title>Kafka::Handle - github.com/decioferreira/kafka.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/decioferreira/kafka.cr/Kafka" data-name="kafka">
+      <a href="../Kafka.html">Kafka</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Configuration" data-name="kafka::configuration">
+      <a href="../Kafka/Configuration.html">Configuration</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Consumer" data-name="kafka::consumer">
+      <a href="../Kafka/Consumer.html">Consumer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/GroupInfo" data-name="kafka::groupinfo">
+      <a href="../Kafka/GroupInfo.html">GroupInfo</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/GroupList" data-name="kafka::grouplist">
+      <a href="../Kafka/GroupList.html">GroupList</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/decioferreira/kafka.cr/Kafka/Handle" data-name="kafka::handle">
+      <a href="../Kafka/Handle.html">Handle</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Message" data-name="kafka::message">
+      <a href="../Kafka/Message.html">Message</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Metadata" data-name="kafka::metadata">
+      <a href="../Kafka/Metadata.html">Metadata</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Producer" data-name="kafka::producer">
+      <a href="../Kafka/Producer.html">Producer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Queue" data-name="kafka::queue">
+      <a href="../Kafka/Queue.html">Queue</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Topic" data-name="kafka::topic">
+      <a href="../Kafka/Topic.html">Topic</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicConfiguration" data-name="kafka::topicconfiguration">
+      <a href="../Kafka/TopicConfiguration.html">TopicConfiguration</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicPartition" data-name="kafka::topicpartition">
+      <a href="../Kafka/TopicPartition.html">TopicPartition</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicPartitionList" data-name="kafka::topicpartitionlist">
+      <a href="../Kafka/TopicPartitionList.html">TopicPartitionList</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Kafka::Handle
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Kafka/Handle.html">Kafka::Handle</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Direct Known Subclasses</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type"><a href="../Kafka/Consumer.html">Kafka::Consumer</a></li>
+  
+    <li class="other-type"><a href="../Kafka/Producer.html">Kafka::Producer</a></li>
+  
+  </ul>
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/handle.cr#L2" target="_blank">kafka/handle.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Class Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28type%3ALibKafka%3A%3ATypeT%2Cconf%3AConfiguration%29-class-method" class="signature"><strong>.new</strong>(type : LibKafka::TypeT, conf : Configuration)</a>
+        
+          <div class="summary"><p>Creates a new Kafka handle and starts its operation according to the specified type.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#new%28handle%3ALibKafka%3A%3ARdKafkaT%29-class-method" class="signature"><strong>.new</strong>(handle : LibKafka::RdKafkaT)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#brokers_add%28brokerlist%3AString%29-instance-method" class="signature"><strong>#brokers_add</strong>(brokerlist : String)</a>
+        
+          <div class="summary"><p>Adds one or more brokers to the kafka handle's list of initial bootstrap brokers.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#destroy-instance-method" class="signature"><strong>#destroy</strong></a>
+        
+          <div class="summary"><p>Destroy Kafka handle.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#member_id-instance-method" class="signature"><strong>#member_id</strong></a>
+        
+          <div class="summary"><p>Returns this client's broker-assigned group member id.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#name%3AString-instance-method" class="signature"><strong>#name</strong> : String</a>
+        
+          <div class="summary"><p>Returns Kafka handle name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#outq_len-instance-method" class="signature"><strong>#outq_len</strong></a>
+        
+          <div class="summary"><p>Returns the current out queue length.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#poll%28timeout_ms%3D%3Cspanclass%3D%22n%22%3E1000%3C%2Fspan%3E%29-instance-method" class="signature"><strong>#poll</strong>(timeout_ms = <span class="n">1000</span>)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#set_log_level%28level%3ALibC%3A%3AInt%29-instance-method" class="signature"><strong>#set_log_level</strong>(level : LibC::Int)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_unsafe%3ALibKafka%3A%3ARdKafkaT-instance-method" class="signature"><strong>#to_unsafe</strong> : LibKafka::RdKafkaT</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Class Method Detail</h2>
+  
+    <div class="entry-detail" id="new&#40;type:LibKafka::TypeT,conf:Configuration&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(type : <a href="../LibKafka/TypeT.html">LibKafka::TypeT</a>, conf : <a href="../Kafka/Configuration.html">Configuration</a>)
+
+        <a class="method-permalink" href="#new%28type%3ALibKafka%3A%3ATypeT%2Cconf%3AConfiguration%29-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Creates a new Kafka handle and starts its operation according to the specified type.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/handle.cr#L9" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="new&#40;handle:LibKafka::RdKafkaT&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(handle : LibKafka::RdKafkaT)
+
+        <a class="method-permalink" href="#new%28handle%3ALibKafka%3A%3ARdKafkaT%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/handle.cr#L5" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="brokers_add&#40;brokerlist:String&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>brokers_add</strong>(brokerlist : String)
+
+        <a class="method-permalink" href="#brokers_add%28brokerlist%3AString%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Adds one or more brokers to the kafka handle's list of initial
+bootstrap brokers.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/handle.cr#L40" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="destroy-instance-method">
+      <div class="signature">
+        
+        def <strong>destroy</strong>
+
+        <a class="method-permalink" href="#destroy-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Destroy Kafka handle.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/handle.cr#L19" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="member_id-instance-method">
+      <div class="signature">
+        
+        def <strong>member_id</strong>
+
+        <a class="method-permalink" href="#member_id-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns this client's broker-assigned group member id.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/handle.cr#L29" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="name:String-instance-method">
+      <div class="signature">
+        
+        def <strong>name</strong> : String
+
+        <a class="method-permalink" href="#name%3AString-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns Kafka handle name.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/handle.cr#L24" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="outq_len-instance-method">
+      <div class="signature">
+        
+        def <strong>outq_len</strong>
+
+        <a class="method-permalink" href="#outq_len-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns the current out queue length.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/handle.cr#L34" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="poll&#40;timeout_ms&#61;&lt;spanclass&#61;&quot;n&quot;&gt;1000&lt;/span&gt;&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>poll</strong>(timeout_ms = <span class="n">1000</span>)
+
+        <a class="method-permalink" href="#poll%28timeout_ms%3D%3Cspanclass%3D%22n%22%3E1000%3C%2Fspan%3E%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/handle.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="set_log_level&#40;level:LibC::Int&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>set_log_level</strong>(level : LibC::Int)
+
+        <a class="method-permalink" href="#set_log_level%28level%3ALibC%3A%3AInt%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/handle.cr#L48" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_unsafe:LibKafka::RdKafkaT-instance-method">
+      <div class="signature">
+        
+        def <strong>to_unsafe</strong> : LibKafka::RdKafkaT
+
+        <a class="method-permalink" href="#to_unsafe%3ALibKafka%3A%3ARdKafkaT-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/handle.cr#L52" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

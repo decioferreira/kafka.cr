@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/decioferreira/kafka.cr">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/doc.js"></script>
+  <title>Kafka::Configuration - github.com/decioferreira/kafka.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/decioferreira/kafka.cr/Kafka" data-name="kafka">
+      <a href="../Kafka.html">Kafka</a>
+      
+        <ul>
+  
+  <li class=" current" data-id="github.com/decioferreira/kafka.cr/Kafka/Configuration" data-name="kafka::configuration">
+      <a href="../Kafka/Configuration.html">Configuration</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Consumer" data-name="kafka::consumer">
+      <a href="../Kafka/Consumer.html">Consumer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/GroupInfo" data-name="kafka::groupinfo">
+      <a href="../Kafka/GroupInfo.html">GroupInfo</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/GroupList" data-name="kafka::grouplist">
+      <a href="../Kafka/GroupList.html">GroupList</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Handle" data-name="kafka::handle">
+      <a href="../Kafka/Handle.html">Handle</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Message" data-name="kafka::message">
+      <a href="../Kafka/Message.html">Message</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Metadata" data-name="kafka::metadata">
+      <a href="../Kafka/Metadata.html">Metadata</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Producer" data-name="kafka::producer">
+      <a href="../Kafka/Producer.html">Producer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Queue" data-name="kafka::queue">
+      <a href="../Kafka/Queue.html">Queue</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Topic" data-name="kafka::topic">
+      <a href="../Kafka/Topic.html">Topic</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicConfiguration" data-name="kafka::topicconfiguration">
+      <a href="../Kafka/TopicConfiguration.html">TopicConfiguration</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicPartition" data-name="kafka::topicpartition">
+      <a href="../Kafka/TopicPartition.html">TopicPartition</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicPartitionList" data-name="kafka::topicpartitionlist">
+      <a href="../Kafka/TopicPartitionList.html">TopicPartitionList</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Kafka::Configuration
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Kafka/Configuration.html">Kafka::Configuration</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L2" target="_blank">kafka/configuration.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Class Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28conf%3D%3Cspanclass%3D%22t%22%3ELibKafka%3C%2Fspan%3E.conf_new%29-class-method" class="signature"><strong>.new</strong>(conf = <span class="t">LibKafka</span>.conf_new)</a>
+        
+          <div class="summary"><p>Create configuration object.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#destroy-instance-method" class="signature"><strong>#destroy</strong></a>
+        
+          <div class="summary"><p>Destroys the configuration object.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dump-instance-method" class="signature"><strong>#dump</strong></a>
+        
+          <div class="summary"><p>Dump the configuration properties and values of configuration to an array with "key", "value" pairs.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dup%3AConfiguration-instance-method" class="signature"><strong>#dup</strong> : Configuration</a>
+        
+          <div class="summary"><p>Creates a copy/duplicate of configuration object configuration.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get%28name%3AString%29-instance-method" class="signature"><strong>#get</strong>(name : String)</a>
+        
+          <div class="summary"><p>Retrieve configuration value for property name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#set%28name%3AString%2Cvalue%3AString%29-instance-method" class="signature"><strong>#set</strong>(name : String, value : String)</a>
+        
+          <div class="summary"><p>Sets a configuration property.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#set_consume_cb%28%26consume_cb%3AMessage-%3E%29-instance-method" class="signature"><strong>#set_consume_cb</strong>(&consume_cb : Message -> )</a>
+        
+          <div class="summary"><p>Consumer: Set consume callback for use with <code>rd_kafka_consumer_poll()</code>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#set_default_topic_conf-instance-method" class="signature"><strong>#set_default_topic_conf</strong></a>
+        
+          <div class="summary"><p>Sets the default topic configuration to use for automatically subscribed topics (e.g., through pattern-matched topics).</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#set_dr_msg_cb%28%26dr_msg_cb%3AProducer%2CMessage-%3E%29-instance-method" class="signature"><strong>#set_dr_msg_cb</strong>(&dr_msg_cb : Producer, Message -> )</a>
+        
+          <div class="summary"><p>Producer: Set delivery report callback in provided configuration object.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#set_error_cb%28%26error_cb%3AHandle%2CLibC%3A%3AInt%2CString-%3E%29-instance-method" class="signature"><strong>#set_error_cb</strong>(&error_cb : Handle, LibC::Int, String -> )</a>
+        
+          <div class="summary"><p>Set error callback in provided configuration object.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#set_log_cb-instance-method" class="signature"><strong>#set_log_cb</strong></a>
+        
+          <div class="summary"><p>Set logger callback.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#set_offset_commit_cb-instance-method" class="signature"><strong>#set_offset_commit_cb</strong></a>
+        
+          <div class="summary"><p>Consumer: Set offset commit callback for use with consumer groups.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#set_opaque-instance-method" class="signature"><strong>#set_opaque</strong></a>
+        
+          <div class="summary"><p>Sets the application's opaque pointer that will be passed to callbacks.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#set_open_cb-instance-method" class="signature"><strong>#set_open_cb</strong></a>
+        
+          <div class="summary"><p>Set open callback.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#set_rebalance_cb%28%26rebalance_cb%3AConsumer%2CLibKafka%3A%3ARespErrT%2CTopicPartitionList-%3E%29-instance-method" class="signature"><strong>#set_rebalance_cb</strong>(&rebalance_cb : Consumer, LibKafka::RespErrT, TopicPartitionList -> )</a>
+        
+          <div class="summary"><p>Consumer: Set rebalance callback for use with coordinated consumer group balancing.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#set_socket_cb-instance-method" class="signature"><strong>#set_socket_cb</strong></a>
+        
+          <div class="summary"><p>Set socket callback.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#set_stats_cb-instance-method" class="signature"><strong>#set_stats_cb</strong></a>
+        
+          <div class="summary"><p>Set statistics callback in provided configuration object.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#set_throttle_cb-instance-method" class="signature"><strong>#set_throttle_cb</strong></a>
+        
+          <div class="summary"><p>Set throttle callback.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_unsafe%3ALibKafka%3A%3ARdKafkaConfT-instance-method" class="signature"><strong>#to_unsafe</strong> : LibKafka::RdKafkaConfT</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Class Method Detail</h2>
+  
+    <div class="entry-detail" id="new&#40;conf&#61;&lt;spanclass&#61;&quot;t&quot;&gt;LibKafka&lt;/span&gt;.conf_new&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(conf = <span class="t">LibKafka</span>.conf_new)
+
+        <a class="method-permalink" href="#new%28conf%3D%3Cspanclass%3D%22t%22%3ELibKafka%3C%2Fspan%3E.conf_new%29-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Create configuration object.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L4" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="destroy-instance-method">
+      <div class="signature">
+        
+        def <strong>destroy</strong>
+
+        <a class="method-permalink" href="#destroy-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Destroys the configuration object.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L8" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dump-instance-method">
+      <div class="signature">
+        
+        def <strong>dump</strong>
+
+        <a class="method-permalink" href="#dump-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Dump the configuration properties and values of configuration to an array
+with "key", "value" pairs.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L150" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dup:Configuration-instance-method">
+      <div class="signature">
+        
+        def <strong>dup</strong> : <a href="../Kafka/Configuration.html">Configuration</a>
+
+        <a class="method-permalink" href="#dup%3AConfiguration-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Creates a copy/duplicate of configuration object configuration.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get&#40;name:String&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>get</strong>(name : String)
+
+        <a class="method-permalink" href="#get%28name%3AString%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Retrieve configuration value for property name.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L28" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="set&#40;name:String,value:String&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>set</strong>(name : String, value : String)
+
+        <a class="method-permalink" href="#set%28name%3AString%2Cvalue%3AString%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Sets a configuration property.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L18" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="set_consume_cb&#40;&amp;consume_cb:Message-&gt;&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>set_consume_cb</strong>(&consume_cb : <a href="../Kafka/Message.html">Message</a> -> )
+
+        <a class="method-permalink" href="#set_consume_cb%28%26consume_cb%3AMessage-%3E%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Consumer: Set consume callback for use with <code>rd_kafka_consumer_poll()</code>.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L60" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="set_default_topic_conf-instance-method">
+      <div class="signature">
+        
+        def <strong>set_default_topic_conf</strong>
+
+        <a class="method-permalink" href="#set_default_topic_conf-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Sets the default topic configuration to use for automatically
+subscribed topics (e.g., through pattern-matched topics).
+The topic configuration object is not usable after this call.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L145" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="set_dr_msg_cb&#40;&amp;dr_msg_cb:Producer,Message-&gt;&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>set_dr_msg_cb</strong>(&dr_msg_cb : <a href="../Kafka/Producer.html">Producer</a>, <a href="../Kafka/Message.html">Message</a> -> )
+
+        <a class="method-permalink" href="#set_dr_msg_cb%28%26dr_msg_cb%3AProducer%2CMessage-%3E%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Producer: Set delivery report callback in provided configuration object.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L42" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="set_error_cb&#40;&amp;error_cb:Handle,LibC::Int,String-&gt;&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>set_error_cb</strong>(&error_cb : <a href="../Kafka/Handle.html">Handle</a>, LibC::Int, String -> )
+
+        <a class="method-permalink" href="#set_error_cb%28%26error_cb%3AHandle%2CLibC%3A%3AInt%2CString-%3E%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Set error callback in provided configuration object.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L101" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="set_log_cb-instance-method">
+      <div class="signature">
+        
+        def <strong>set_log_cb</strong>
+
+        <a class="method-permalink" href="#set_log_cb-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Set logger callback.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L123" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="set_offset_commit_cb-instance-method">
+      <div class="signature">
+        
+        def <strong>set_offset_commit_cb</strong>
+
+        <a class="method-permalink" href="#set_offset_commit_cb-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Consumer: Set offset commit callback for use with consumer groups.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L97" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="set_opaque-instance-method">
+      <div class="signature">
+        
+        def <strong>set_opaque</strong>
+
+        <a class="method-permalink" href="#set_opaque-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Sets the application's opaque pointer that will be passed to callbacks.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L139" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="set_open_cb-instance-method">
+      <div class="signature">
+        
+        def <strong>set_open_cb</strong>
+
+        <a class="method-permalink" href="#set_open_cb-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Set open callback.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L135" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="set_rebalance_cb&#40;&amp;rebalance_cb:Consumer,LibKafka::RespErrT,TopicPartitionList-&gt;&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>set_rebalance_cb</strong>(&rebalance_cb : <a href="../Kafka/Consumer.html">Consumer</a>, <a href="../LibKafka/RespErrT.html">LibKafka::RespErrT</a>, <a href="../Kafka/TopicPartitionList.html">TopicPartitionList</a> -> )
+
+        <a class="method-permalink" href="#set_rebalance_cb%28%26rebalance_cb%3AConsumer%2CLibKafka%3A%3ARespErrT%2CTopicPartitionList-%3E%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Consumer: Set rebalance callback for use with coordinated consumer group
+balancing.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L79" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="set_socket_cb-instance-method">
+      <div class="signature">
+        
+        def <strong>set_socket_cb</strong>
+
+        <a class="method-permalink" href="#set_socket_cb-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Set socket callback.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L131" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="set_stats_cb-instance-method">
+      <div class="signature">
+        
+        def <strong>set_stats_cb</strong>
+
+        <a class="method-permalink" href="#set_stats_cb-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Set statistics callback in provided configuration object.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L127" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="set_throttle_cb-instance-method">
+      <div class="signature">
+        
+        def <strong>set_throttle_cb</strong>
+
+        <a class="method-permalink" href="#set_throttle_cb-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Set throttle callback.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L119" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_unsafe:LibKafka::RdKafkaConfT-instance-method">
+      <div class="signature">
+        
+        def <strong>to_unsafe</strong> : LibKafka::RdKafkaConfT
+
+        <a class="method-permalink" href="#to_unsafe%3ALibKafka%3A%3ARdKafkaConfT-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L153" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

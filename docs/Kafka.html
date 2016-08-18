@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/decioferreira/kafka.cr">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/doc.js"></script>
+  <title>Kafka - github.com/decioferreira/kafka.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent current" data-id="github.com/decioferreira/kafka.cr/Kafka" data-name="kafka">
+      <a href="Kafka.html">Kafka</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Configuration" data-name="kafka::configuration">
+      <a href="Kafka/Configuration.html">Configuration</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Consumer" data-name="kafka::consumer">
+      <a href="Kafka/Consumer.html">Consumer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/GroupInfo" data-name="kafka::groupinfo">
+      <a href="Kafka/GroupInfo.html">GroupInfo</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/GroupList" data-name="kafka::grouplist">
+      <a href="Kafka/GroupList.html">GroupList</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Handle" data-name="kafka::handle">
+      <a href="Kafka/Handle.html">Handle</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Message" data-name="kafka::message">
+      <a href="Kafka/Message.html">Message</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Metadata" data-name="kafka::metadata">
+      <a href="Kafka/Metadata.html">Metadata</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Producer" data-name="kafka::producer">
+      <a href="Kafka/Producer.html">Producer</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Queue" data-name="kafka::queue">
+      <a href="Kafka/Queue.html">Queue</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/Topic" data-name="kafka::topic">
+      <a href="Kafka/Topic.html">Topic</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicConfiguration" data-name="kafka::topicconfiguration">
+      <a href="Kafka/TopicConfiguration.html">TopicConfiguration</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicPartition" data-name="kafka::topicpartition">
+      <a href="Kafka/TopicPartition.html">TopicPartition</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/decioferreira/kafka.cr/Kafka/TopicPartitionList" data-name="kafka::topicpartitionlist">
+      <a href="Kafka/TopicPartitionList.html">TopicPartitionList</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> Kafka
+
+</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/configuration.cr#L1" target="_blank">kafka/configuration.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/handle.cr#L1" target="_blank">kafka/handle.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/consumer.cr#L3" target="_blank">kafka/consumer.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/group_info.cr#L1" target="_blank">kafka/group_info.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/group_list.cr#L1" target="_blank">kafka/group_list.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/message.cr#L1" target="_blank">kafka/message.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/metadata.cr#L1" target="_blank">kafka/metadata.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/producer.cr#L3" target="_blank">kafka/producer.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/queue.cr#L1" target="_blank">kafka/queue.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic.cr#L1" target="_blank">kafka/topic.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_configuration.cr#L1" target="_blank">kafka/topic_configuration.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_partition.cr#L1" target="_blank">kafka/topic_partition.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/topic_partition_list.cr#L1" target="_blank">kafka/topic_partition_list.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka/version.cr#L1" target="_blank">kafka/version.cr</a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka.cr#L3" target="_blank">kafka.cr</a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>Constant Summary</h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="VERSION">
+        <strong>VERSION</strong> = <code><span class="s">&quot;0.1.0&quot;</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+  <h2>Class Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#err2name%28err%3ALibKafka%3A%3ARespErrT%29%3AString-class-method" class="signature"><strong>.err2name</strong>(err : LibKafka::RespErrT) : String</a>
+        
+          <div class="summary"><p>Returns the error code name (enum name).</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#err2str%28err%3ALibKafka%3A%3ARespErrT%29%3AString-class-method" class="signature"><strong>.err2str</strong>(err : LibKafka::RespErrT) : String</a>
+        
+          <div class="summary"><p>Returns a human readable representation of a kafka error.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get_debug_contexts%3AString-class-method" class="signature"><strong>.get_debug_contexts</strong> : String</a>
+        
+          <div class="summary"><p>Retrieve supported debug contexts for use with the "debug" configuration property.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#get_err_descs%3AArray%28LibKafka%3A%3AErrDesc%29-class-method" class="signature"><strong>.get_err_descs</strong> : Array(LibKafka::ErrDesc)</a>
+        
+          <div class="summary"><p>FIXME: only returning first errdesc Returns the full list of error codes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#last_error%3ALibKafka%3A%3ARespErrT-class-method" class="signature"><strong>.last_error</strong> : LibKafka::RespErrT</a>
+        
+          <div class="summary"><p>Returns the last error code generated by a legacy API call in the current thread.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#version%3AInt32-class-method" class="signature"><strong>.version</strong> : Int32</a>
+        
+          <div class="summary"><p>Returns the librdkafka version as integer.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#version_str%3AString-class-method" class="signature"><strong>.version_str</strong> : String</a>
+        
+          <div class="summary"><p>Returns the librdkafka version as string.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#wait_destroyed%28timeout_ms%3D%3Cspanclass%3D%22n%22%3E1000%3C%2Fspan%3E%29%3ALibC%3A%3AInt-class-method" class="signature"><strong>.wait_destroyed</strong>(timeout_ms = <span class="n">1000</span>) : LibC::Int</a>
+        
+          <div class="summary"><p>Wait for all rd_kafka_t objects to be destroyed.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#conf_properties_show-instance-method" class="signature"><strong>#conf_properties_show</strong></a>
+        
+          <div class="summary"><p>Prints a table to fp of all supported configuration properties, their default values as well as a description.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#errno%3ALibC%3A%3AInt-instance-method" class="signature"><strong>#errno</strong> : LibC::Int</a>
+        
+          <div class="summary"><p>Returns the thread-local system errno.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#errno2err%28errnox%3ALibC%3A%3AInt%29%3ALibKafka%3A%3ARespErrT-instance-method" class="signature"><strong>#errno2err</strong>(errnox : LibC::Int) : LibKafka::RespErrT</a>
+        
+          <div class="summary"><p>Converts the system errno value errnox to a RespErrT error code upon failure from the following functions: - rd_kafka_topic_new() - rd_kafka_consume_start() - rd_kafka_consume_stop() - rd_kafka_consume() - rd_kafka_consume_batch() - rd_kafka_consume_callback() - rd_kafka_consume_queue() - rd_kafka_produce()</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#thread_cnt%3ALibC%3A%3AInt-instance-method" class="signature"><strong>#thread_cnt</strong> : LibC::Int</a>
+        
+          <div class="summary"><p>Retrieve the current number of threads in use by librdkafka.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+</div>
+
+
+  <h2>Class Method Detail</h2>
+  
+    <div class="entry-detail" id="err2name&#40;err:LibKafka::RespErrT&#41;:String-class-method">
+      <div class="signature">
+        
+        def self.<strong>err2name</strong>(err : <a href="LibKafka/RespErrT.html">LibKafka::RespErrT</a>) : String
+
+        <a class="method-permalink" href="#err2name%28err%3ALibKafka%3A%3ARespErrT%29%3AString-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns the error code name (enum name).</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka.cr#L42" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="err2str&#40;err:LibKafka::RespErrT&#41;:String-class-method">
+      <div class="signature">
+        
+        def self.<strong>err2str</strong>(err : <a href="LibKafka/RespErrT.html">LibKafka::RespErrT</a>) : String
+
+        <a class="method-permalink" href="#err2str%28err%3ALibKafka%3A%3ARespErrT%29%3AString-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns a human readable representation of a kafka error.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka.cr#L37" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get_debug_contexts:String-class-method">
+      <div class="signature">
+        
+        def self.<strong>get_debug_contexts</strong> : String
+
+        <a class="method-permalink" href="#get_debug_contexts%3AString-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Retrieve supported debug contexts for use with the "debug"
+configuration property.
+Returns comma-separated list of available debugging contexts.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka.cr#L17" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="get_err_descs:Array&#40;LibKafka::ErrDesc&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>get_err_descs</strong> : Array(LibKafka::ErrDesc)
+
+        <a class="method-permalink" href="#get_err_descs%3AArray%28LibKafka%3A%3AErrDesc%29-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>FIXME: only returning first errdesc
+Returns the full list of error codes.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka.cr#L28" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="last_error:LibKafka::RespErrT-class-method">
+      <div class="signature">
+        
+        def self.<strong>last_error</strong> : <a href="LibKafka/RespErrT.html">LibKafka::RespErrT</a>
+
+        <a class="method-permalink" href="#last_error%3ALibKafka%3A%3ARespErrT-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns the last error code generated by a legacy API call
+in the current thread.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka.cr#L48" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="version:Int32-class-method">
+      <div class="signature">
+        
+        def self.<strong>version</strong> : Int32
+
+        <a class="method-permalink" href="#version%3AInt32-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns the librdkafka version as integer.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka.cr#L5" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="version_str:String-class-method">
+      <div class="signature">
+        
+        def self.<strong>version_str</strong> : String
+
+        <a class="method-permalink" href="#version_str%3AString-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns the librdkafka version as string.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="wait_destroyed&#40;timeout_ms&#61;&lt;spanclass&#61;&quot;n&quot;&gt;1000&lt;/span&gt;&#41;:LibC::Int-class-method">
+      <div class="signature">
+        
+        def self.<strong>wait_destroyed</strong>(timeout_ms = <span class="n">1000</span>) : LibC::Int
+
+        <a class="method-permalink" href="#wait_destroyed%28timeout_ms%3D%3Cspanclass%3D%22n%22%3E1000%3C%2Fspan%3E%29%3ALibC%3A%3AInt-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Wait for all rd_kafka_t objects to be destroyed.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka.cr#L22" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="conf_properties_show-instance-method">
+      <div class="signature">
+        
+        def <strong>conf_properties_show</strong>
+
+        <a class="method-permalink" href="#conf_properties_show-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Prints a table to fp of all supported configuration properties,
+their default values as well as a description.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka.cr#L78" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="errno:LibC::Int-instance-method">
+      <div class="signature">
+        
+        def <strong>errno</strong> : LibC::Int
+
+        <a class="method-permalink" href="#errno%3ALibC%3A%3AInt-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns the thread-local system errno.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka.cr#L67" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="errno2err&#40;errnox:LibC::Int&#41;:LibKafka::RespErrT-instance-method">
+      <div class="signature">
+        
+        def <strong>errno2err</strong>(errnox : LibC::Int) : <a href="LibKafka/RespErrT.html">LibKafka::RespErrT</a>
+
+        <a class="method-permalink" href="#errno2err%28errnox%3ALibC%3A%3AInt%29%3ALibKafka%3A%3ARespErrT-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Converts the system errno value errnox to a RespErrT
+error code upon failure from the following functions:</p>
+
+<ul><li>rd_kafka_topic_new()</li><li>rd_kafka_consume_start()</li><li>rd_kafka_consume_stop()</li><li>rd_kafka_consume()</li><li>rd_kafka_consume_batch()</li><li>rd_kafka_consume_callback()</li><li>rd_kafka_consume_queue()</li><li>rd_kafka_produce()</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka.cr#L62" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="thread_cnt:LibC::Int-instance-method">
+      <div class="signature">
+        
+        def <strong>thread_cnt</strong> : LibC::Int
+
+        <a class="method-permalink" href="#thread_cnt%3ALibC%3A%3AInt-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Retrieve the current number of threads in use by librdkafka.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/decioferreira/kafka.cr/blob/f7078c36f21fe1e5dd5da20898e7e663109c31e8/src/kafka.cr#L72" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
