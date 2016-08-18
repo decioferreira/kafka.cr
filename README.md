@@ -1,5 +1,7 @@
 # Kafka.cr [Alpha]
 
+[![Build Status](https://travis-ci.org/decioferreira/kafka.cr.svg?branch=master)](https://travis-ci.org/decioferreira/kafka.cr)
+
 Crystal bindings for librdkafka.
 
 ## Installation
