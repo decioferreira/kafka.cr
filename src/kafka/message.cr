@@ -23,6 +23,10 @@ module Kafka
       String.new(@rkmessage.value.payload.as(Pointer(LibC::Char)), @rkmessage.value.len)
     end
 
+    def offset
+      @rkmessage.value.offset
+    end
+
     def to_s(io)
       io << payload
     end

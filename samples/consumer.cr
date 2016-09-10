@@ -15,11 +15,11 @@ puts "metadata.broker.list set to: '#{conf.get("metadata.broker.list")}'"
 conf.set("debug", "all")
 puts "debug set to: '#{conf.get("debug")}'"
 
-topicConf = Kafka::TopicConfiguration.new
+topic_conf = Kafka::TopicConfiguration.new
 
 rk = Kafka::Consumer.new(conf)
 
-rkt = Kafka::Topic.new(rk, "EventsIn", topicConf)
+rkt = Kafka::Topic.new(rk, "foobar", topic_conf)
 
 rkt.consume_start(0, -1_i64)
 

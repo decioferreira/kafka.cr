@@ -14,4 +14,10 @@ describe Kafka do
       "all,generic,broker,topic,metadata,producer,queue,msg,protocol,cgrp,security,fetch"
     )
   end
+
+  pending "Wait for all rd_kafka_t objects to be destroyed" do
+  end
+
+  pending "Returns the full list of error codes" do
+  end
 end

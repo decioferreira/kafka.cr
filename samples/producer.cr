@@ -20,7 +20,7 @@ rk.set_log_level(7) # LOG_DEBUG
 
 rk.brokers_add("localhost:9092")
 
-rkt = Kafka::Topic.new(rk, "EventsIn", topic_conf)
+rkt = Kafka::Topic.new(rk, "foobar", topic_conf)
 
 rkt.produce(0, "{}")
 

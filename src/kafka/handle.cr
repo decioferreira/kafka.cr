@@ -41,6 +41,8 @@ module Kafka
       LibKafka.brokers_add(self, brokerlist)
     end
 
+    # Polls the provided kafka handle for events.
+    # Events will cause application provided callbacks to be called.
     def poll(timeout_ms = 1000)
       LibKafka.poll(self, timeout_ms)
     end
